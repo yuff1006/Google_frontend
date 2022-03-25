@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Search</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./normalize.css" />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body class="page">
+    <header class="header">
+      <nav class="header__container header__container_advanced">
+        <img
+          src="./images/logo.png"
+          alt="google image logo"
+          class="content__logo content__logo_advanced"
+        />
+        <a href="./index.html" class="header__link" id="main-search">Search</a>
+      </nav>
+    </header>
+    <main class="content">
+      <h1 class="content__header">Advanced Search</h1>
+      <p class="content__subheader">Find pages with...</p>
+      <form action="https://google.com/search" class="form form_advanced">
+        <label class="form__label-container">
+          <span class="form__label">all these words:</span>
+          <input
+            class="form__search form__search_advanced"
+            type="text"
+            name="as_q"
+          />
+        </label>
+        <label class="form__label-container">
+          <span class="form__label">this exact word or phrase:</span>
+          <input
+            class="form__search form__search_advanced"
+            type="text"
+            name="as_epq"
+          />
+        </label>
+        <label class="form__label-container">
+          <span class="form__label">any of these words:</span>
+          <input
+            class="form__search form__search_advanced"
+            type="text"
+            name="as_oq"
+          />
+        </label>
+        <label class="form__label-container">
+          <span class="form__label">none of these words:</span>
+          <input
+            class="form__search form__search_advanced"
+            type="text"
+            name="as_eq"
+          />
+        </label>
+        <input
+          type="submit"
+          class="form__button form__button_advanced"
+          value="Advanced Search"
+        />
+      </form>
+    </main>
+  </body>
+</html>
