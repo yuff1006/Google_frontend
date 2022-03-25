@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Search</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./normalize.css" />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body class="page">
+    <header class="header">
+      <nav class="header__container">
+        <a href="./image.html" class="header__link" id="image-search"
+          >Image Search</a
+        >
+        <a href="./advanced.html" class="header__link" id="advanced-search"
+          >Advanced Search</a
+        >
+      </nav>
+    </header>
+    <main class="content">
+      <img src="./images/logo.png" alt="google logo" class="content__logo" />
+      <form action="https://google.com/search" class="form">
+        <input type="text" name="q" class="form__search" />
+        <div class="form__button-container">
+          <input type="submit" value="Google Search" class="form__button" />
+          <input type="submit" value="I'm Feeling Lucky" class="form__button" />
+          <input type="hidden" name="btnI" value="I'm Feeling Lucky" />
+        </div>
+      </form>
+    </main>
+  </body>
+</html>
